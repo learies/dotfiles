@@ -1,0 +1,13 @@
+[user]
+	name = LeAries
+	email = learies@ya.ru
+	signingkey = 39297B714785C940
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
+	excludesFile = /home/alex/.gitignore
+[gpg]
+	program = gpg2
