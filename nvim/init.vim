@@ -20,3 +20,6 @@ set imsearch=0
 set textwidth=80
 set colorcolumn=80
 highlight ColorColumn ctermbg=gray
+
+set list
+set listchars=eol:↲,tab:→→,trail:•,nbsp:↔
