@@ -33,5 +33,5 @@ alias ll='ls -l'
 alias la='ls -al'
 
 # Алиас для Neovim
-alias vim='nvim'
+alias vim='nvim.appimage'
 
