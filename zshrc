@@ -2,9 +2,13 @@
 autoload -Uz compinit
 compinit
 
+# Цвета
+autoload -U colors
+colors
+
 # Приглашение командной строки
-export PROMPT='> '
-export RPROMPT='[%1~]' 
+export PROMPT="$fg_bold[green]%n@%m:$reset_color $fg_bold[blue]%~$reset_color 
+> "
 
 # Автоматическое выполнение команды rehash после установки нового пакета
 zstyle ':completion:*' rehash true
@@ -25,13 +29,17 @@ setopt HIST_REDUCE_BLANKS
 setopt HIST_IGNORE_SPACE
 
 # Редактор по умолчанию
-export EDITOR="vim"
+alias vim='nvim.appimage'
+export EDITOR='vim'
 
-# Алиасы для ls
-alias ls='ls --color'
-alias ll='ls -l'
+# Алиас для ls
+alias ls='ls --color -F'
+alias ll='ls -lh'
 alias la='ls -al'
 
-# Алиас для Neovim
-alias vim='nvim.appimage'
+# Golang
+export PATH=$PATH:/usr/local/go/bin
+export GOCACHE=/tmp/go-cache
+export GOPROXY=off  # go get GOPROXY=direct
+export GOSUMDB=off
 
