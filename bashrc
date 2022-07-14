@@ -124,3 +124,8 @@ if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
     source $HOME/.bash-git-prompt/gitprompt.sh
 fi
 
+# Golang
+export PATH=$PATH:/usr/local/go/bin
+export GOCACHE=/tmp/go-cache
+export GOPROXY=off  # go get GOPROXY=direct
+export GOSUMDB=off
