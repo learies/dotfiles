@@ -6,15 +6,18 @@ size = 15.0
 
 [font.bold]
 family = "JetBrains Mono NL"
-style = "Medium"
+style = "Light"
 
 [font.italic]
 family = "JetBrains Mono NL"
-style = "Italic"
+style = "ExtraLight"
 
 [font.normal]
 family = "JetBrains Mono NL"
-style = "Regular"
+style = "ExtraLight"
 
 [window]
 startup_mode = "Fullscreen"
+
+[terminal]
+shell = { program = "/opt/homebrew/bin/tmux", args = ["new-session", "-A", "-s", "main"] }
